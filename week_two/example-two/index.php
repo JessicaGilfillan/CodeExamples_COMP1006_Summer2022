@@ -1,0 +1,39 @@
+<?php
+/*first create a new PDO object with the data source name, user, passsword. The PDO object is an instance of the PDO class.
+PDO uses a data source name (DSN) that contains the following information:*/
+
+//The database server host
+$host = 'localhost';
+//The database name
+$db = 'COMP1006_Summer2022';
+//The user
+$user = 'root';
+//The password
+$password = 'root';
+
+$dsn = "mysql:host=$host;dbname=$db";
+
+//error handling with try catch blocks 
+try {
+    $pdo = new PDO($dsn, $user, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    if ($pdo) {
+        echo "Connected to the $db database successfully!";
+    }
+} catch (PDOException $e) {
+    echo "<p>Unable to establish a connection" . $e->getMessage();
+}
+
+
+/*Error handling strategies
+PDO supports three different error handling strategies:
+
+PDO::ERROR_SILENT – PDO sets an error code for inspecting using the PDO::errorCode() and PDO::errorInfo() methods. The PDO::ERROR_SILENT is the default mode.
+PDO::ERRMODE_WARNING – Besides setting the error code, PDO will issue an E_WARNING message.
+PDO::ERRMODE_EXCEPTION – Besides setting the error code, PDO will raise a PDOException.*/
+
+/*To set the error handling strategy, you can pass an associative array to the PDO constructor like this:
+
+$pdo = new PDO($dsn, $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+Code language: PHP (php)
+Or you can use the setAttribute() method of the PDO instance:*/
