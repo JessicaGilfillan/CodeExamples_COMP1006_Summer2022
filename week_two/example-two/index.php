@@ -24,7 +24,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
     echo "<p> Successfully connected! </p>"; 
 }
-catch(PDOException $e) {
+catch(Exception $e) {
     echo "<p> Unable to establish a connection : . $e->getMessage(); 
 }
 
