@@ -2,28 +2,31 @@
 /*first create a new PDO object with the data source name, user, passsword. The PDO object is an instance of the PDO class.
 PDO uses a data source name (DSN) that contains the following information:*/
 
+
+
 //The database server host
-$host = 'localhost';
+$host = 'localhost'; 
 //The database name
-$db = 'COMP1006_Summer2022';
+$db = 'mynewdata'; 
 //The user
 $user = 'root';
 //The password
-$password = 'root';
+//wamp users 
+//$password = '';
+//mamp 
+$password = 'root'; 
+$dsn = "mysql:$host;dbname=$db"; 
 
-$dsn = "mysql:host=$host;dbname=$db";
 
 //error handling with try catch blocks 
 try {
-    $pdo = new PDO($dsn, $user, $password);
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    if ($pdo) {
-        echo "Connected to the $db database successfully!";
-    }
-} catch (PDOException $e) {
-    echo "<p>Unable to establish a connection" . $e->getMessage();
+    $conn = new PDO ($dsn, $user, $password,); 
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
+    echo "<p> Successfully connected! </p>"; 
 }
-
+catch(PDOException $e) {
+    echo "<p> Unable to establish a connection : . $e->getMessage(); 
+}
 
 /*Error handling strategies
 PDO supports three different error handling strategies:
