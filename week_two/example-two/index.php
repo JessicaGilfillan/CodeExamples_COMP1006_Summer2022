@@ -7,25 +7,31 @@ PDO uses a data source name (DSN) that contains the following information:*/
 //The database server host
 $host = 'localhost'; 
 //The database name
-$db = 'mynewdata'; 
+$db = 'mynewdatabae'; 
 //The user
-$user = 'root';
+$user = 'roo';
 //The password
 //wamp users 
 //$password = '';
 //mamp 
 $password = 'root'; 
-$dsn = "mysql:$host;dbname=$db"; 
+//error #1 - missing host= 
+$dsn = "mysql:host=$host;dbname=$db"; 
 
 
 //error handling with try catch blocks 
 try {
     $conn = new PDO ($dsn, $user, $password,); 
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-    echo "<p> Successfully connected! </p>"; 
+    //#2 - add some logic 
+    if($conn) {
+        echo "<p> Successfully connected! </p>"; 
+    }
 }
-catch(Exception $e) {
-    echo "<p> Unable to establish a connection : . $e->getMessage(); 
+// error #3 - PDOException 
+catch(PDOException $e) {
+    //#4 final " in the wrong spot 
+    echo "<p> Unable to establish a connection :" . $e->getMessage(); 
 }
 
 /*Error handling strategies
