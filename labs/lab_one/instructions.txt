@@ -1,0 +1,7 @@
+Laksmi is building an interactive task list application in order to keep track of her tasks. She wants to be able to use a form to capture the task name, due date and category (i.e. school, personal or work) and save this information to a table called tasks. She would also like a page where she can view all her tasks. 
+
+Laksmi has started to develop the application but is missing some key pieces. In order to complete this lab, you will need to complete/provide the missing code and test to see whether the application is functioning as required. 
+
+The files you have included are: addtask.php (to add a task to the db), index.php (contains a form to allow the user to add a new task), connect.php (contains db connection info), viewtasks.php (to show all tasks and task information) and query.sql (contains the SQL statements need to build the tasks table). 
+
+Once you have your application functioning, you can launch it on the production server (AWS webserver). 
