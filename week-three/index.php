@@ -6,8 +6,6 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <title>COMP1006 - Week 3 - Saving & Retrieving Data  </title>
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <!-- Bootstrap -->
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
  </head>
 
  <body>
@@ -18,40 +16,40 @@
      <main>
 
        <p> Looking for new songs to add to your work at home playlist? Join our community and share with other music lovers! </p>
-       <form action="process.php" method="post" class="form">
-         <div class="form-group">
+       <form action="process.php" method="post">
+         <div >
            <label for="fname"> Your First Name </label>
-           <input type="text" name="fname" class="form-control" id="fname">
+           <input type="text" name="fname" id="fname">
          </div>
-         <div class="form-group">
+         <div>
            <label for="lname"> Your Last Name </label>
-           <input type="text" name="lname" class="form-control" id="lname">
+           <input type="text" name="lname" id="lname">
          </div>
          <div>
            <label for="location"> Your Location </label>
-           <input type="text" name="location" class="form-control" id="location">
+           <input type="text" name="location" id="location">
          </div>
-         <div class="form-group">
+         <div>
            <label for="location"> Your Age </label>
-           <input type="number" name="age" class="form-control" id="age">
+           <input type="number" name="age" id="age">
          </div>
-         <div class="form-group">
+         <div>
            <label for="email"> Your Email </label>
-           <input type="text" name="email" class="form-control" id="email">
+           <input type="text" name="email" id="email">
          </div>
-         <div class="form-group">
+         <div>
            <label for="favsong"> What Song Should We Add to the List This Month?</label>
-           <input type="text" name="favsong" class="form-control" id="favsong">
+           <input type="text" name="favsong" id="favsong">
          </div>
-         <div class="form-group">
+         <div>
            <label for="genre"> Song Genre </label>
-           <input type="text" name="genre" class="form-control" id="genre">
+           <input type="text" name="genre" id="genre">
          </div>
-         <div class="form-group">
+         <div>
            <label for="artist"> Artist </label>
-           <input type="text" name="artist" class="form-control" id="artist">
+           <input type="text" name="artist" id="artist">
          </div>
-         <input type="submit" name="submit" value="Submit" class="btn btn-primary">
+         <input type="submit" name="submit" value="Submit">
        </form>
      </main>
      <footer>
