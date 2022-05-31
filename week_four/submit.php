@@ -41,27 +41,27 @@
        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="form">
          <div class="form-group">
            <label for="fname"> Your First Name </label>
-           <input type="text" name="fname" class="form-control" id="fname" required>
+           <input type="text" name="fname" class="form-control" id="fname">
          </div>
          <div class="form-group">
            <label for="lname"> Your Last Name </label>
-           <input type="text" name="lname" class="form-control" id="lname" required>
+           <input type="text" name="lname" class="form-control" id="lname">
          </div>
          <div class="form-group">
            <label for="location"> Your Location </label>
-           <input type="text" name="location" class="form-control" id="location" required>
+           <input type="text" name="location" class="form-control" id="location">
          </div>
          <div class="form-group">
            <label for="location"> Your Age </label>
-           <input type="number" name="age" class="form-control" id="age" required>
+           <input type="text" name="age" class="form-control" id="age">
          </div>
          <div class="form-group">
            <label for="email"> Your Email </label>
-           <input type="email" name="email" class="form-control" id="email" required>
+           <input type="text" name="text" class="form-control" id="email">
          </div>
          <div class="form-group">
            <label for="favsong"> What Song Should We Add to the List This Month?</label>
-           <input type="text" name="favsong" class="form-control" id="favsong" required>
+           <input type="text" name="favsong" class="form-control" id="favsong">
          </div>
          <div class="form-group">
            <label for="genre"> Genre </label>
@@ -91,7 +91,7 @@
          </div>
          <div class="form-group">
            <label for="artist"> Artist </label>
-           <input type="text" name="artist" class="form-control" id="artist" required>
+           <input type="text" name="artist" class="form-control" id="artist">
          </div>
          <input type="submit" name="submit" value="Submit" class="btn btn-primary">
        </form>
