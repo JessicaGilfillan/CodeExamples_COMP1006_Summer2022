@@ -1,8 +1,8 @@
 <?php
 try {
-    $dsn = '';
-    $username = ''; 
-    $password = '';
+    $dsn = 'mysql:host=localhost;dbname=COMP1006_Summer2022';
+    $username = 'root'; 
+    $password = 'root';
     $db = new PDO($dsn, $username, $password);
 }
 catch(PDOException $e) {
