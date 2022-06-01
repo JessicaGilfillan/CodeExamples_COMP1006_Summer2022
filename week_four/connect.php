@@ -1,9 +1,11 @@
 <?php
+
 try {
-    $dsn = 'mysql:host=localhost;dbname=COMP1006_Summer2022';
-    $username = 'root'; 
-    $password = 'root';
+    $dsn = 'mysql:host=;dbname=';
+    $username = ''; 
+    $password = '';
     $db = new PDO($dsn, $username, $password);
+    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch(PDOException $e) {
    $error_message = $e->getMessage(); 

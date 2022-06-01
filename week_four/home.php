@@ -24,7 +24,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.php">About</a>
@@ -57,7 +57,7 @@
         <div class="row">
             <div class="col-md-6">
             <p> I'm baby biodiesel typewriter coloring book viral before they sold out. Poke wolf chillwave, you probably haven't heard of them hot chicken YOLO vice etsy flexitarian yr fixie DSA. Hammock migas green juice jianbing photo booth poke umami.</p>
-            <h2><a href="playlist.php"> Latest Playlist </a> </h2>
+            <h2><a href="playlists.php"> Latest Playlist </a> </h2>
             </div>
             <div class="col-md-6">
             <img src="assets/music file2-02.svg" alt="listening to music illustration">
@@ -77,4 +77,5 @@
     </div>
     <!--end row-->
 </body>
+
 </html>

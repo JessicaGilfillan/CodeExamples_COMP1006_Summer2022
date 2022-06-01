@@ -47,7 +47,7 @@
     <main class="view">
       <div class="row">
         <div class="col-md-4">
-          <img src="assets/musicfile2-06.svg" alt="listening to music illustration">
+          <img src="assets/music file2-06.svg" alt="listening to music illustration">
         </div>
         <div class="col-md-8">
           <h2> About TuneShare </h2>
