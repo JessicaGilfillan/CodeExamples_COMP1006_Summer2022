@@ -47,7 +47,7 @@
     <main class="view">
       <div class="row">
         <div class="col-md-4">
-          <img src="assets/musicfile2-10.svg" alt="listening to music illustration">
+          <img src="assets/music file2-10.svg" alt="listening to music illustration">
         </div>
         <div class="col-md-8">
           <?php
@@ -72,7 +72,7 @@
 
           foreach ($records as $record) {
             echo "<tr><td>"
-              . $record['first_name'] . "</td><td>" . $record['last_name'] . "</td><td>" . $record['location']  . $record['favsong'] . "</td><td>" .  $record['genre'] . "</td><td>" . $record['genre'] . "</td></tr>";
+              . $record['first_name'] . "</td><td>" . $record['last_name'] . "</td><td>" . $record['location'] . "</td><td>" . $record['favsong'] . "</td><td>" .  $record['genre'] . "</td><td>" . $record['genre'] . "</td></tr>";
           }
           echo "</tbody></table>";
 
