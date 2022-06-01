@@ -72,7 +72,7 @@
 
           foreach ($records as $record) {
             echo "<tr><td>"
-              . $record['first_name'] . "</td><td>" . $record['last_name'] . "</td><td>" . $record['location'] . "</td><td>" . $record['favsong'] . "</td><td>" .  $record['genre'] . "</td><td>" . $record['genre'] . "</td></tr>";
+              . $record['first_name'] . "</td><td>" . $record['last_name'] . "</td><td>" . $record['location'] . "</td><td>" . $record['favsong'] . "</td><td>" .  $record['genre'] . "</td><td>" . $record['artist'] . "</td></tr>";
           }
           echo "</tbody></table>";
 
