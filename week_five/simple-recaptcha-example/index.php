@@ -16,10 +16,28 @@
         <?php
         //check if the form has been submitted 
         if (isset($_POST['submit'])) {
-          // step three - verify the user response on the server side 
-
-
-
+          // step three - verify the user response on the server side
+          //check that checkbox has been checked 
+          if(!empty($_POST['g-recaptcha-response'])) {
+              //verify the response
+              $secret = '6LdEJ1QgAAAAAHvdyiusPv5v1R2ypdGrUn0xrY6D'; 
+              $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='. $secret . '&response=' . $_POST['g-recaptcha-response']); 
+              var_dump($verifyResponse); 
+              $responseData = json_decode($verifyResponse, true);
+              if($responseData['success'] === true) {
+                $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_SPECIAL_CHARS); 
+                $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL, FILTER_VALIDATE_EMAIL ); 
+                echo "<div class='alert alert-success'>
+                <p> Hey there $name. Your email is $email </p>
+                </div>"; 
+              }
+              else {
+                echo "<div class='alert alert-danger'><p> No robots allowed!</p></div>";
+              }
+          }
+          else {
+            echo "<div class='alert alert-danger'><p> Please let us know that you are not a robot </p></div>";
+          }
         }
 
         ?>
@@ -35,7 +53,7 @@
                 <input type="email" name="email" class="form-control">
             </div>
             <!-- step two - client-side integration  -->
-            
+            <div class="g-recaptcha" data-sitekey="6LdEJ1QgAAAAAB8--vov2p32u15pnrtxgmWdSJS0"></div>
             <input type="submit" value="Submit" name="submit">
         </form>
     </div>

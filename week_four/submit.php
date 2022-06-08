@@ -94,6 +94,7 @@
 
               //close the db connection 
               $statement->closeCursor();
+              //send user to playlist page 
               header("Location: playlist.php");
             } catch (PDOException $e) {
               echo "<p> Sorry! Something has gone wrong on our end! An email has been sent to our admin team </p>";
