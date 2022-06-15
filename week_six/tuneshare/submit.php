@@ -52,11 +52,49 @@
 
         //intialize variables 
 
-      
+        $firstname = null;
+        $lastname = null;
+        $location = null;
+        $email = null;
+        $age = null;
+        $favsong = null;
+        $genre = null;
+        $artist = null;
+
+        $user_id = null;
+        $user_id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
+
 
         //check if there is a user_id available in URL string, then prepare and execute a query that will return the information associated with the user_id selected and echo in the form 
 
-  
+        if (!empty($user_id) && $user_id !== false) {
+          //connect to db
+          require_once('connect.php');
+          //set up sql query 
+          $sql = "SELECT * FROM songs WHERE user_id = :user_id;";
+          //prepare query 
+          $statement = $db->prepare($sql);
+          //bind
+          $statement->bindParam(':user_id', $user_id);
+          //execute 
+          $statement->execute();
+          //use fetchAll method 
+          $records = $statement->fetchAll();
+
+          foreach ($records as $record) {
+            $firstname = $record['first_name'];
+            $lastname = $record['last_name'];
+            $genre = $record['genre'];
+            $age = $record['age'];
+            $location = $record['location'];
+            $email = $record['email'];
+            $favsong = $record['favsong'];
+            $artist = $record['artist'];
+          }
+          //close db connection 
+          $statement->closeCursor();
+        }
+
         //if the form has been submited, process the form information 
         if (isset($_POST['submit'])) {
           //check whether the recaptcha was checked by the user 
@@ -72,7 +110,9 @@
             $input_genre = filter_input(INPUT_POST, 'genre', FILTER_SANITIZE_SPECIAL_CHARS);
             $input_artist = filter_input(INPUT_POST, 'artist', FILTER_SANITIZE_SPECIAL_CHARS);
             //if editing, capture the id from the hidden input 
-    
+            $id = null;
+            $id = filter_input(INPUT_POST, 'user_id');
+
 
             $secret = '6LfePG4gAAAAAASIYzASMEqTP1LD44Q5LVsv3NU9';
             $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secret . '&response=' . $_POST['g-recaptcha-response']);
@@ -98,12 +138,14 @@
                 //if we have an id, we are editing (UPDATE), if not, we will be adding information to the table (INSERT)
 
 
-          
-                  //this is a new tune we are adding to our app 
-                  // set up an SQL command to save the info 
+                //this is a new tune we are adding to our app 
+                // set up an SQL command to save the info 
+
+                if (!empty($id)) {
+                  $sql = "UPDATE songs SET first_name = :firstname, last_name = :lastname, location = :location, email = :email, age = :age, favsong = :favsong, genre = :genre, artist = :artist WHERE user_id = :id";
+                } else {
                   $sql = "INSERT INTO songs (first_name, last_name, location, email, age, favsong, genre, artist) VALUES (:firstname, :lastname, :location, :email, :age, :favsong, :genre, :artist);";
-
-
+                }
 
                 //call the prepare method of the PDO object, return PDOStatement Object
                 $statement = $db->prepare($sql);
@@ -119,8 +161,9 @@
                 $statement->bindParam(':genre', $input_genre);
                 $statement->bindParam(':artist', $input_artist);
                 //bind user id if needed 
-              
-
+                if (!empty($id)) {
+                  $statement->bindParam(':id', $id);
+                }
                 //execute the query 
                 $statement->execute();
 
@@ -144,6 +187,7 @@
          <div class="col-md-6">
            <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" class="form">
              <!-- add hidden input with user id if editing -->
+             <input type="hidden" name="user_id" value="<?php echo $user_id; ?>">
              <div class="form-group">
                <label for="fname"> Your First Name </label>
                <input type="text" name="fname" class="form-control" id="fname" value="<?php echo $firstname; ?>" required>
