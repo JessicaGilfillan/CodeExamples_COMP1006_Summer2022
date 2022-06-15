@@ -74,7 +74,15 @@
           // Step One - Add Edit & Delete Button to the UI to allow users to edit & delete 
           foreach ($records as $record) {
             echo "<tr><td>"
-              . $record['first_name'] . "</td><td>" . $record['last_name'] . "</td><td>" . $record['location'] . "</td><td>" . $record['favsong'] . "</td><td>" .  $record['genre'] . "</td><td>" . $record['artist'] . "</td></tr>"; 
+              . $record['first_name'] . "</td><td>" . $record['last_name'] . "</td><td>" . $record['location'] . "</td><td>" . $record['favsong'] . "</td><td>" .  $record['genre'] . "</td><td>" . $record['artist'] . "</td>
+              
+              <td>
+              <a href='delete.php?id=". $record['user_id'] ."' class='btn btn-danger' onclick='return confirm(\"Are you sure? \");' > Delete Tune </a>
+              </td>
+              <td>
+              <a href='submit.php?id=". $record['user_id'] ."' class='btn btn-primary' > Update Tune </a>
+              </td>
+          </tr>"; 
           }
 
           echo "</tbody></table>";
