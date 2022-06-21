@@ -1,0 +1,5 @@
+Using the provided code files, add the ability for users to edit their information using the table & button created in view.php
+
+Add your code to process.php
+
+Test & launch your version of Lab 3 on the production server (AWS web server). 
