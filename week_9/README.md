@@ -5,7 +5,7 @@ This weeks code example includes:
 3.) storing user info using sessions 
 
 
-Files inclue: 
+Files include: 
 
 1.) index.php - homepage that includes a registration form and a sign in form 
 
@@ -20,4 +20,5 @@ Files inclue:
 6.) logout.php - a PHP script that allows the user to logout, removing any session variables that have been set and destroying the session 
 
 7.) restricted.php - a custom error page to let users know that the content they tried to access is restricted to logged in users 
+
 
