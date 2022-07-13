@@ -3,7 +3,8 @@
 
 
 //validate & store form info 
-
+$input_user_login = filter_input(INPUT_POST, 'user_login');
+$input_password = filter_input(INPUT_POST, 'password');
 
 
 /* validation 
@@ -17,26 +18,55 @@ if (empty($input_user_login)) {
 } else {
     try {
         ////connect to the db 
-        
+        require_once 'connect.php';
+
         //set up query to grab user info from the table  
-        
+        $sql = "SELECT user_id, username, password FROM coolcats WHERE username = :username OR email = :username";
+
         //prepare 
-        
+        $stmt = $db->prepare($sql);
+
         //bind 
-        
+        $stmt->bindParam(':username', $input_user_login);
+
         //execute 
-        //check if the user exists - i.e. there is a record in the table 
+        $stmt->execute();
+
+        //check if the user exists - i.e. there is a record in the table
+        if ($stmt->rowCount() >= 1) {
             //if so, fetch the information for the user 
-           
-                //check if the passwords match using password_verify 
-                
+            if ($row = $stmt->fetch()) {
+                $id = $row['user_id'];
+                $username = $row['username'];
+                $hashedpassword = $row['password'];
+                //check if the passwords match using password_verify()
+                if (password_verify($input_password, $hashedpassword)) {
                     //start a session and store the user's information
-                  
+                    session_start();
                     // Store data in session variables
-                  
-                    // Redirect user to members page - only logged in users should be able to view 
-                           
-         
+                    $_SESSION["loggedin"] = true;
+                    $_SESSION["id"] = $id;
+                    $_SESSION["username"] = $username;
+                    // Redirect user to members page - only logged in users should be able to view
+                     echo("{$_SESSION['id']}"."<br />");
+                    echo "$id, $username, $hashedpassword"; 
+
+
+                
+
+
+                    header('Location: members.php');
+                }
+                else {
+                    //Display an error message to let the user know it was the wrong password 
+                    $password_error = "Wrong password!"; 
+                    echo $password_error; 
+                }
+            }
+        }
+        else {
+            echo "can't find users!"; 
+        }
     } catch (Exception $e) {
         $errormessage = $e->getMessage();
         echo "<p> Opps! Something went wrong? </p>";

@@ -1,7 +1,7 @@
 <!-- this is a restricted page - only logged in users should be able to view -->
+<?php require_once 'auth.php' ?>
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">

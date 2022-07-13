@@ -33,21 +33,37 @@ elseif (strlen($input_password) < 6) {
 else {
     try{
     //hash the password 
-    
+    $hashedpassword = password_hash($input_password,PASSWORD_DEFAULT); 
     //connect to the db 
-    require_once 'connect.php'; 
-    //set up the query 
-    $query = "INSERT INTO coolcats (first_name, last_name, username, email, password) VALUES (:first_name, :last_name, :username, :email, :password)";
+    require_once 'connect.php';
+    //check to see if username already exists 
+    $namecheck = "SELECT * FROM coolcats WHERE username = :username"; 
     //prepare 
-    $stmt =  $db->prepare($query); 
-    //bindParam
-    $stmt->bindParam(':first_name', $input_first_name); 
-    $stmt->bindParam(':last_name', $input_last_name); 
-    $stmt->bindParam(':username', $input_username); 
-    $stmt->bindParam(':email', $input_email); 
-    $stmt->bindParam(':password', $hashedpassword); 
-    //execute 
-    $stmt->execute(); 
+    $statement = $db->prepare($namecheck); 
+    //bind 
+    $statement->bindParam(":username", $input_username); 
+    //execute
+    $statement->execute(); 
+        if($statement->rowCount() == 1) {
+            echo "<p> Username already exists!</p>"; 
+            echo "<a href='index.php'> Back to registration/login </a>"; 
+            exit(); 
+        }
+        else {
+        //set up the query 
+        $query = "INSERT INTO coolcats (first_name, last_name, username, email, password) VALUES (:first_name, :last_name, :username, :email, :password)";
+        //prepare 
+        $stmt =  $db->prepare($query); 
+        //bindParam
+        $stmt->bindParam(':first_name', $input_first_name); 
+        $stmt->bindParam(':last_name', $input_last_name); 
+        $stmt->bindParam(':username', $input_username); 
+        $stmt->bindParam(':email', $input_email); 
+        $stmt->bindParam(':password', $hashedpassword); 
+        //execute 
+        $stmt->execute();
+        header('Location:index.php'); 
+        }
     } 
     catch(Exception $e) {
         $errormessage = $e->getMessage();
@@ -58,4 +74,3 @@ else {
         $stmt->closeCursor(); 
     }
 }
-?>
