@@ -1,0 +1,66 @@
+[05-Jul-2022 16:03:44 UTC] PHP Notice:  Undefined variable: b in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/test.php on line 5
+There was an error connecting to the database. Error Message: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES).[05-Jul-2022 16:20:48 UTC] PHP Notice:  Array to string conversion in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/connect.php on line 40
+There was an error connecting to the database. The error isSQLSTATE[HY000] [1045] Access denied for user 'rot'@'localhost' (using password: YES)It occured in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/connect.phpon line 28. Stack Trace : Array.[05-Jul-2022 16:20:48 UTC] PHP Notice:  Undefined variable: db in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 20
+[05-Jul-2022 16:20:48 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 44
+[05-Jul-2022 16:20:48 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php:20
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php:44
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 44
+[05-Jul-2022 16:23:06 UTC] PHP Notice:  Array to string conversion in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/connect.php on line 40
+[05-Jul-2022 16:23:07 UTC] PHP Notice:  Undefined variable: db in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 20
+[05-Jul-2022 16:23:07 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 44
+[05-Jul-2022 16:23:07 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php:20
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php:44
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 44
+[05-Jul-2022 16:23:50 UTC] PHP Notice:  Array to string conversion in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/connect.php on line 40
+[05-Jul-2022 16:23:50 UTC] PHP Notice:  Undefined variable: db in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 20
+[05-Jul-2022 16:23:50 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 44
+[05-Jul-2022 16:23:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php:20
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php:44
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 44
+There was an error connecting to the database. The error isSQLSTATE[HY000] [1045] Access denied for user 'rot'@'localhost' (using password: YES)It occured in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/connect.phpon line 28.[06-Jul-2022 14:50:26 UTC] PHP Notice:  Undefined variable: db in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 20
+[06-Jul-2022 14:50:26 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 44
+[06-Jul-2022 14:50:26 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php:20
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php:44
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 44
+There was an error connecting to the database. The error isSQLSTATE[HY000] [2002] Operation timed outIt occured in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/connect.phpon line 11.[24-Jul-2022 18:59:22 UTC] PHP Notice:  Undefined variable: db in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/submit.php on line 117
+[24-Jul-2022 18:59:22 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/submit.php on line 148
+[24-Jul-2022 18:59:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/submit.php:117
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/submit.php:148
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/submit.php on line 148
+[24-Jul-2022 19:01:11 UTC] PHP Notice:  Undefined variable: msg in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/submit.php on line 144
+SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: first_name in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 30
+[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: last_name in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 30
+[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: location in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 30
+[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: user_id in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 30
+[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: user_id in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 32
+[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: first_name in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 30
+[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: last_name in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 30
+[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: location in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 30
+[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: user_id in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 30
+[24-Jul-2022 19:04:18 UTC] PHP Notice:  Undefined index: user_id in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/playlist.php on line 32
+There was an error when user attempted to delete a record. Error Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'comp1006_summer2022.song' doesn't exist.

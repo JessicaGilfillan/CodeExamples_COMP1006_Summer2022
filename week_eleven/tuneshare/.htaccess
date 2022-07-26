@@ -1,0 +1,2 @@
+#ErrorDocument 404 /code_solutions/week_eight/tuneshare/404.php
+ErrorDocument 404 /COMP1006_Summer2022/week_eight/tuneshare/404.php
