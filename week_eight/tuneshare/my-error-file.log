@@ -32,3 +32,13 @@ Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan
 Stack trace:
 #0 {main}
   thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eight/tuneshare/playlist.php on line 44
+There was an error connecting to the database. The error isSQLSTATE[HY000] [1045] Access denied for user 'rot'@'localhost' (using password: YES)It occured in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eight/tuneshare/connect.phpon line 28.[26-Jul-2022 20:09:15 UTC] PHP Notice:  Undefined variable: db in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eight/tuneshare/playlist.php on line 20
+[26-Jul-2022 20:09:15 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eight/tuneshare/playlist.php on line 44
+[26-Jul-2022 20:09:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eight/tuneshare/playlist.php:20
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eight/tuneshare/playlist.php:44
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eight/tuneshare/playlist.php on line 44

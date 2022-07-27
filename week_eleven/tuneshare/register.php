@@ -28,6 +28,7 @@
           $photo_type = $_FILES['photo']['type'];
           $photo_size = $_FILES['photo']['size'];
           $photo_tmp = $_FILES['photo']['tmp_name'];
+          $photo_error = $_FILES['photo']['error'];
           $id = null;
           $id = filter_input(INPUT_POST, 'user_id');
 
@@ -55,7 +56,7 @@
 
               //move the uploaded image from temporary directory to images folder 
               $target = 'images/'. $photo;
-              move_uploaded_file($_FILES['photo']['tmp_name'], $target);
+              move_uploaded_file($photo_tmp, $target);
 
               //hash the password 
               $hashed_password = password_hash($input_password, PASSWORD_DEFAULT);

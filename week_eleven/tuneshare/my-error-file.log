@@ -113,3 +113,69 @@ There was an error when user attempted to delete a record. Error Message: SQLSTA
 [26-Jul-2022 18:01:21 UTC] PHP Notice:  Undefined variable: email in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/register.php on line 138
 [26-Jul-2022 18:01:21 UTC] PHP Notice:  Undefined variable: email in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/register.php on line 142
 [26-Jul-2022 18:01:21 UTC] PHP Notice:  Undefined variable: photo in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_solutions/week_eleven/tuneshare/register.php on line 147
+[27-Jul-2022 14:47:07 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php on line 53
+[27-Jul-2022 14:47:07 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected '<', expecting end of file in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/connect.php:3
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php:53
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php on line 53
+[27-Jul-2022 14:47:15 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php on line 53
+[27-Jul-2022 14:47:15 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected '<', expecting end of file in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/connect.php:3
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php:53
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php on line 53
+[27-Jul-2022 14:49:30 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php on line 54
+[27-Jul-2022 14:49:30 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected '<', expecting end of file in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/connect.php:3
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php:54
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php on line 54
+[27-Jul-2022 14:49:34 UTC] PHP Notice:  Undefined variable: statement in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php on line 54
+[27-Jul-2022 14:49:34 UTC] PHP Fatal error:  Uncaught ParseError: syntax error, unexpected '<', expecting end of file in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/connect.php:3
+Stack trace:
+#0 {main}
+
+Next Error: Call to a member function closeCursor() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php:54
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/playlist.php on line 54
+[27-Jul-2022 14:50:46 UTC] PHP Notice:  Undefined variable: db in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php on line 11
+[27-Jul-2022 14:50:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php:11
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php on line 11
+[27-Jul-2022 14:51:40 UTC] PHP Notice:  Undefined variable: db in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php on line 11
+[27-Jul-2022 14:51:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php:11
+Stack trace:
+#0 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php on line 11
+[27-Jul-2022 17:43:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php:41
+Stack trace:
+#0 /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php(41): PDOStatement->execute()
+#1 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php on line 41
+[27-Jul-2022 17:47:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php:38
+Stack trace:
+#0 /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php(38): PDOStatement->execute()
+#1 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php on line 38
+[27-Jul-2022 17:49:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php:40
+Stack trace:
+#0 /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php(40): PDOStatement->execute()
+#1 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php on line 40
+[27-Jul-2022 17:53:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php:40
+Stack trace:
+#0 /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php(40): PDOStatement->execute()
+#1 {main}
+  thrown in /Users/jgilfillan/Dropbox2/Dropbox/Georgian/COMP1006/summer_2022/02-course_content/code_files/code_examples/CodeExamples_COMP1006_Summer2022/week_eleven/tuneshare/search_results.php on line 40

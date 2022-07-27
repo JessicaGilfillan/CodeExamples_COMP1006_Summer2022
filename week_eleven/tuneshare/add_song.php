@@ -14,6 +14,7 @@
         $genre = null;
         $artist = null;
         $songid = null;
+        $link = null;
         //get song id from URL string if present/editing 
         $songid = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
         //if the song id is not empty, we are editing 
